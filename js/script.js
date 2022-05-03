@@ -36,6 +36,7 @@ const app = new Vue({
         /* Funzione che aumenta l'indice */
         aumenta() {
             this.indice++;
+            console.log(this.indice);
 
             if (this.indice > 4) {
                 this.indice = 0;
@@ -48,6 +49,10 @@ const app = new Vue({
             if (this.indice < 0) {
                 this.indice = this.slides.length - 1;
             }
+        },
+
+        stopFunction() {
+            clearInterval(carusel);
         },
     },
 

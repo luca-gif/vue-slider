@@ -19,7 +19,7 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img @mouseover="" :src="slides[indice].image" :alt="slides[indice].title" />
+                    <img @mouseleave="stopFunction()" :src="slides[indice].image" :alt="slides[indice].title" />
                     <div class="text">
                         <h3>{{slides[indice].title}}</h3>
                         <p>
