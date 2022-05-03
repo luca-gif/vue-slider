@@ -34,7 +34,7 @@
 
                     <div @click="aumenta()" class="next"></div>
 
-                    <div v-for="(slide,index) in slides" class="thumb" :class="active">
+                    <div v-for="(slide,index) in slides" class="thumb" :class="index === indice ? 'active' : ''">
                         <img @click="indice=index" :src="slide.image" :alt="slide.title" />
                     </div>
 

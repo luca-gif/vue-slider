@@ -51,7 +51,7 @@ const app = new Vue({
         },
     },
 
-    /*  mounted() {
-          carusel = setInterval(this.aumenta, 3000);
-      }, */
+    mounted() {
+        carusel = setInterval(this.aumenta, 3000);
+    },
 });
