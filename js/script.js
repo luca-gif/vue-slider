@@ -40,8 +40,6 @@ const app = new Vue({
             if (this.indice > 4) {
                 this.indice = 0;
             }
-
-            console.log(this.indice);
         },
 
         /* Funzione che diminuisce l'indice */
@@ -50,7 +48,10 @@ const app = new Vue({
             if (this.indice < 0) {
                 this.indice = 4;
             }
-            console.log(this.indice);
         },
+    },
+
+    mounted() {
+        setInterval(this.aumenta, 3000);
     },
 });
