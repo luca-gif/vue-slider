@@ -46,12 +46,12 @@ const app = new Vue({
         diminuisci() {
             this.indice--;
             if (this.indice < 0) {
-                this.indice = 4;
+                this.indice = this.slides.length - 1;
             }
         },
     },
 
-    mounted() {
-        setInterval(this.aumenta, 3000);
-    },
+    /*  mounted() {
+          carusel = setInterval(this.aumenta, 3000);
+      }, */
 });
