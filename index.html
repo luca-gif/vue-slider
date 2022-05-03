@@ -33,19 +33,19 @@
                     <div @click="diminuisci()" class="prev"></div>
                     <div @click="aumenta()" class="next"></div>
 
-                    <div class="thumb active">
+                    <div @click="indice=0" class="thumb active">
                         <img :src="slides[0].image" :alt="slides[0].title" />
                     </div>
-                    <div class="thumb">
+                    <div @click="indice=1" class="thumb">
                         <img :src="slides[1].image" :alt="slides[1].title" />
                     </div>
-                    <div class="thumb">
+                    <div @click="indice=2" class="thumb">
                         <img :src="slides[2].image" :alt="slides[2].title" />
                     </div>
-                    <div class="thumb">
+                    <div @click="indice=3" class="thumb">
                         <img :src="slides[3].image" :alt="slides[3].title" />
                     </div>
-                    <div class="thumb">
+                    <div @click="indice=4" class="thumb">
                         <img :src="slides[4].image" :alt="slides[4].title" />
                     </div>
                 </div>
